@@ -1,13 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import * as ReactBootStrap from "react-bootstrap";
-import NavBar from './navBar';
+import NavBar from './components/Navbar/NavBar';
+import ItemListContainer from './containers/ItemListContainer';
 
 function App() {
   return (
-    <NavBar />
-    
+    <div className="App">
+      <header>
+        <NavBar />
+      </header>
+      <ItemListContainer greeting="Hola tutor, que tenga un buen dia!" />
+    </div>
   );
 }
 
