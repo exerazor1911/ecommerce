@@ -3,6 +3,7 @@ import * as ReactBootStrap from "react-bootstrap";
 import '../../App.css';
 import CartWidget from '../CartWidget/CartWidget';
 
+
 export default class NavBar extends React.Component{
 
   render() {
