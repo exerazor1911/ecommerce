@@ -11,7 +11,7 @@ const Item = ({id,price,title,description,img, stock}) => {
         <ReactBootStrap.Card.Text>{description}</ReactBootStrap.Card.Text>
         <ReactBootStrap.Card.Text>{price}</ReactBootStrap.Card.Text>
         <ReactBootStrap.Card.Text>Stock: {stock}</ReactBootStrap.Card.Text>
-        <Counterp stock={stock} />
+        <Counterp stock={stock}  />
         <ReactBootStrap.Button style={{width: '100%'}} className="inner-button mt-3" variant="success">Agregar al carrito</ReactBootStrap.Button>
         </ReactBootStrap.Card.Body>
     </ReactBootStrap.Card>
