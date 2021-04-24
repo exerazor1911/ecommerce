@@ -13,7 +13,8 @@ const ItemListContainer = () => {
                 description:"Comida para perros Sabrositos" ,
                 id:"123abc" ,
                 title:"Sabrositos" ,
-                price:"$1000"
+                price:"$1000" ,
+                stock: 5
             } , 
         
             {
@@ -21,7 +22,8 @@ const ItemListContainer = () => {
                 description:"Comida para perros Pedigree" ,
                 id:"456def" ,
                 title:"Pedigree" ,
-                price:"$1000"
+                price:"$1000" ,
+                stock: 5
             } ,
             
             {
@@ -29,7 +31,8 @@ const ItemListContainer = () => {
                 description:"Comida para perros Pro Plan" ,
                 id:"789ghi" ,
                 title:"Pro Plan" ,
-                price:"$1000"
+                price:"$1000" ,
+                stock: 5
             } ,
             
             {
@@ -37,7 +40,8 @@ const ItemListContainer = () => {
                 description:"Comida para perros Royal" ,
                 id:"123jkl" ,
                 title:"Royal" ,
-                price:"$1000"
+                price:"$1000" ,
+                stock: 5
             }]
     
         const lists = new Promise((resolve, reject)=>{
