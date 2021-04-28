@@ -12,7 +12,7 @@ const ItemListContainer = () => {
                 img:"https://res.cloudinary.com/dm2gfj40h/image/upload/v1619226738/sabrositos_e6cfkt.jpg" ,
                 description:"Comida para perros Sabrositos" ,
                 id:"123abc" ,
-                title:"Sabrositos" ,
+                title:"Sabrositos/" ,
                 price:"$1000" ,
                 stock: 5
             } , 
