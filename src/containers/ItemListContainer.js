@@ -9,7 +9,7 @@ const ItemListContainer = () => {
     useEffect(()=>{
         const products = [
             {
-                img:"./sabrositos" ,
+                img:"https://res.cloudinary.com/dm2gfj40h/image/upload/v1619226738/sabrositos_e6cfkt.jpg" ,
                 description:"Comida para perros Sabrositos" ,
                 id:"123abc" ,
                 title:"Sabrositos" ,
@@ -18,30 +18,30 @@ const ItemListContainer = () => {
             } , 
         
             {
-                img:"./pedigree" ,
+                img:"https://res-console.cloudinary.com/dm2gfj40h/thumbnails/v1/image/upload/v1619226738/cGVkaWdyZWVfbHhydGo0/preview" ,
                 description:"Comida para perros Pedigree" ,
                 id:"456def" ,
                 title:"Pedigree" ,
                 price:"$1000" ,
-                stock: 5
+                stock: 4
             } ,
             
             {
-                img:"./proPlan" ,
+                img:"https://res-console.cloudinary.com/dm2gfj40h/thumbnails/v1/image/upload/v1619226738/cHJvUGxhbl95dnBodW4=/preview" ,
                 description:"Comida para perros Pro Plan" ,
                 id:"789ghi" ,
                 title:"Pro Plan" ,
                 price:"$1000" ,
-                stock: 5
+                stock: 3
             } ,
             
             {
-                img:"./royal" ,
+                img:"https://res-console.cloudinary.com/dm2gfj40h/thumbnails/v1/image/upload/v1619226738/cm95YWxfa2htbW0z/preview" ,
                 description:"Comida para perros Royal" ,
                 id:"123jkl" ,
                 title:"Royal" ,
                 price:"$1000" ,
-                stock: 5
+                stock: 2
             }]
     
         const lists = new Promise((resolve, reject)=>{
@@ -52,7 +52,6 @@ const ItemListContainer = () => {
     
         lists.then((res)=>{
             setArrayItems(res)
-            console.log(res)
         })
     
         .catch(()=>{
@@ -68,7 +67,9 @@ const ItemListContainer = () => {
     
 
     return (
-      <ItemList />
+        <React.Fragment>
+      {arrayItems.length > 0 ? <ItemList productItems={arrayItems}/> : <p>No products</p>} 
+        </React.Fragment>
     );
 };
 
