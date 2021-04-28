@@ -68,7 +68,7 @@ const ItemListContainer = () => {
 
     return (
         <React.Fragment>
-      {arrayItems.length > 0 ? <ItemList productItems={arrayItems}/> : <p>No products</p>} 
+      {arrayItems.length > 0 ? <ItemList productItems={arrayItems}/> : <div style={{height: '20rem', width: '100%'}} className="text-center pt-5 align-center"><ReactBootStrap.Spinner className="" style={{height: '100%', width: '25%'}} animation="grow" variant="danger" /></div>} 
         </React.Fragment>
     );
 };
