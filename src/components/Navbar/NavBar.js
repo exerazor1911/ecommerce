@@ -2,6 +2,7 @@ import React from 'react';
 import * as ReactBootStrap from "react-bootstrap";
 import '../../App.css';
 import CartWidget from '../CartWidget/CartWidget';
+import {Link} from 'react-router-dom';
 
 
 export default class NavBar extends React.Component{
@@ -10,7 +11,7 @@ export default class NavBar extends React.Component{
 
     return (
       <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
-      <ReactBootStrap.Navbar.Brand className="navBrand" href="#home"> <img className="logo" src="https://res-console.cloudinary.com/dm2gfj40h/thumbnails/v1/image/upload/v1619226738/bG9EZURpb2dlbmVzX2lsanJ5dA==/preview" alt=" "></img>
+      <ReactBootStrap.Navbar.Brand className="navBrand"><Link to='/'> <img className="logo" src="https://res-console.cloudinary.com/dm2gfj40h/thumbnails/v1/image/upload/v1619226738/bG9EZURpb2dlbmVzX2lsanJ5dA==/preview" alt=" "></img></Link>
       </ReactBootStrap.Navbar.Brand>
       <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">

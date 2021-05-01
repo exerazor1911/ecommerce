@@ -1,6 +1,7 @@
 import React from 'react';
 import * as ReactBootStrap from "react-bootstrap";
 import Counterp from './Counterp';
+import {Link} from 'react-router-dom';
 
 const Item = ({id,price,title,description,img, stock}) => {
     return (
@@ -12,7 +13,8 @@ const Item = ({id,price,title,description,img, stock}) => {
         <ReactBootStrap.Card.Text>{price}</ReactBootStrap.Card.Text>
         <ReactBootStrap.Card.Text>Stock: {stock}</ReactBootStrap.Card.Text>
         <Counterp stock={stock}  />
-        <ReactBootStrap.Button style={{width: '100%'}} className="inner-button mt-3" variant="success">Agregar al carrito</ReactBootStrap.Button>
+        <ReactBootStrap.Button style={{width: '50%', height: '6vh'}} className="inner-button mt-3" variant="success">Agregar al carrito</ReactBootStrap.Button>
+        <ReactBootStrap.Button style={{width: '50%', height: '6vh'}} className="inner-button mt-3" variant="danger"><Link to={`/item/${id}`}>Ver Detalle</Link></ReactBootStrap.Button>
         </ReactBootStrap.Card.Body>
     </ReactBootStrap.Card>
     );
