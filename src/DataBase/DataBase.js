@@ -7,7 +7,8 @@ return ( [
         id:"1" ,
         title:"Sabrositos(Perro)" ,
         price:"$1000" ,
-        stock: 5
+        stock: 5 ,
+        category: "dogFood"
     } , 
 
     {
@@ -16,7 +17,8 @@ return ( [
         id:"2" ,
         title:"Pedigree" ,
         price:"$1000" ,
-        stock: 4
+        stock: 4 ,
+        category: "dogFood"
     } ,
     
     {
@@ -25,7 +27,8 @@ return ( [
         id:"3" ,
         title:"Pro Plan" ,
         price:"$1000" ,
-        stock: 3
+        stock: 3 ,
+        category: "dogFood"
     } ,
     
     {
@@ -34,7 +37,8 @@ return ( [
         id:"4" ,
         title:"Royal" ,
         price:"$1000" ,
-        stock: 2
+        stock: 2 ,
+        category: "dogFood"
     } ,
 
     {
@@ -43,7 +47,8 @@ return ( [
         id:"5" ,
         title:"Gati" ,
         price:"$1000" ,
-        stock: 2
+        stock: 2 ,
+        category: "catFood"
     } ,
 
     {
@@ -52,7 +57,8 @@ return ( [
         id:"6" ,
         title:"Sabrositos(Gato)" ,
         price:"$1000" ,
-        stock: 3
+        stock: 3 ,
+        category: "catFood"
     } ,
 
     {
@@ -61,7 +67,8 @@ return ( [
         id:"7" ,
         title:"Excellent" ,
         price:"$1000" ,
-        stock: 4
+        stock: 4 ,
+        category: "catFood"
     } ,
 
     {
@@ -70,6 +77,7 @@ return ( [
         id:"8" ,
         title:"Cat Chow" ,
         price:"$1000" ,
-        stock: 5
+        stock: 5 ,
+        category: "catFood"
     }]
 )}

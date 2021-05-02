@@ -5,6 +5,7 @@ import NavBar from './components/Navbar/NavBar';
 import ItemListContainer from './containers/ItemListContainer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import ItemDetailContainer from './containers/ItemDetailContainer';
+import DogFoodListContainer from './containers/DogFoodListContainer';
 
 function App() {
   return (
@@ -20,6 +21,12 @@ function App() {
             <ItemDetailContainer />
           </div>
         </Route>
+        <Route path='/category/:id'>
+          <div>
+            <DogFoodListContainer />
+          </div>
+        </Route>
+        
         <Route path='/'>
           <ItemListContainer />
         </Route>

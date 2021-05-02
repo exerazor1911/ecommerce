@@ -3,13 +3,12 @@ import * as ReactBootStrap from "react-bootstrap";
 import ItemList from '../components/items/ItemList';
 import productsList from '../DataBase/DataBase';
 
-const ItemListContainer = () => {
 
+const ItemListContainer = () => {
     const [arrayItems, setArrayItems] = useState([])
 
     useEffect(()=>{
         const products = productsList()
-    
         const lists = new Promise((resolve, reject)=>{
             setTimeout(()=>{
                 resolve(products)
